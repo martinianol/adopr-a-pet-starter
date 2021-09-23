@@ -1,15 +1,16 @@
 import React from 'react';
 
-// import useHistory here.
+import { useHistory } from 'react-router-dom';
 
 const PetDetailsNotFound = () => {
-
+  const history = useHistory()
   // get the history object from useHistory()
 
   const goBack = () => {
     // Go back!
+    history.goBack()
   }
-  
+
   return (
     <main className="page">
       <h3>404: Who let the dogs out?</h3>
